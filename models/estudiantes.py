@@ -7,10 +7,14 @@ class estudiantes(db.Model):
     nombre=db.Column(db.String(100))
     apellido=db.Column(db.String(100))
     edad=db.Column(db.Integer)
+    correo=db.Column(db.String(100),unique=True)
+    genero=db.Column(db.String(20))
     #-------------------------------------------------------------------#
-    def __init__(self,cedula,nombre,apellido,edad):
+    def __init__(self,cedula,nombre,apellido,edad,correo,genero):
         self.cedula=cedula
         self.nombre=nombre
         self.apellido=apellido
         self.edad=edad
+        self.correo=correo
+        self.genero=genero
     #-------------------------------------------------------------------#    

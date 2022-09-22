@@ -1,9 +1,12 @@
 
-def orde(cedula,nombre,apellido,edad): 
+def orde(id,cedula,nombre,apellido,edad,correo,genero): 
     new={
     'Cedula':cedula,
     'Nombre':nombre,
     'Apellido':apellido,
-    'Edad':edad 
+    'Edad':edad,
+    'Correo':correo,
+    'Genero':genero,
+    'ID':id
     }
     return new

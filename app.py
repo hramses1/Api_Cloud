@@ -9,3 +9,4 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 SQLAlchemy(app)
 
 app.register_blueprint(routes)
+
